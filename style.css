@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#add-new-book {
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(30vh, auto);
+  grid-gap: 0.5em;
+  grid-auto-flow: row;
+}
+
+.container .book {
+  border: 1px white solid;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.book .book-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.book .book-author {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.book .book-pages {
+  font-size: 26px;
+}
+
+.book .book-read {
+  font-size: 10px;
+}
+
+.remove-button {
+  order: 6;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
